@@ -1,0 +1,350 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	background: url(../images/header-background.png);
+	overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+	cursor: context-menu;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	padding: 0;
+}
+header img{
+	width: 80%;
+	margin: 0 20px;
+}
+header form{
+	border: 2px solid #0065B3;
+	border-radius: 2px;
+	display: grid;
+	grid-template-columns: 85% 15%;
+	justify-content: center;
+	margin: 22px 0px;
+	height: 50px;
+}
+header form button{
+	padding-right: 10px;
+	text-align: right;
+	grid-column: 2;
+	color: #000;
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 18px;
+}
+header form input{
+	grid-column: 1;
+	border-right: none;
+	padding: 5px 10px;
+	font-size: 18px;
+	outline: none;
+	background: none;
+	border: none;
+}
+.navbar{
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.second-nav{
+	background: #0065B3;
+}
+.navbar-toggle{
+	border: 1px solid #fff;
+}
+.navbar-toggle .icon-bar{
+	background-color: #fff;
+} 
+.nav li>a{
+	color: #fff;
+	font-size: 18px;
+	padding: 16px 15px;
+}
+.nav>li>a:focus{
+	background: none;
+}
+.nav>li>a:hover{
+	background: none;
+	transition: all .35s;
+	color: #00BCD4;
+	text-shadow: 0 0 5px #212121;
+}
+.item{
+	margin-top: 20px;
+	background: #00bcd4;
+	height: 150px;
+	width: 100%;
+	border: 2px solid #00BCD4;
+	position: relative;
+}
+.item img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+.item a{
+	opacity: 0;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+	position: absolute;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+}
+.item h4{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+}
+.item a:hover{
+	opacity: 1;
+	transition: all .35s;
+	color: #fff;
+	text-shadow: 0 0 5px #bbb;
+}
+.popularTitle{
+	margin: 20px 0 25px 0;
+	text-align: center;
+	padding: 10px;
+	width: 35%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	border-bottom: 2px solid red;
+}
+.main{
+	margin-bottom: 10px;
+	background: #fff;
+	box-shadow: 0 5px 10px #424242;
+	border-radius: 0 0 3px 3px;
+}
+.parallax{
+	border-radius: 5px;
+	margin: 15px;
+	background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,0.8)), url(../images/parallax.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.quote{
+	text-shadow: 0 0 5px #00bcd4;
+	color: #fff;
+	width: 80%;
+	text-align: center;
+	position: relative;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.main .description{
+	background: #eeeeee;
+}
+.main .description .about{
+	text-align: center;
+	padding: 30px;
+	font-size: 18px;
+	color: #0288D1;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.description .about h1{
+	color: #0065B3;
+    margin: 30px ;
+}
+.description img{
+	width: 100%;
+	padding: 15px;
+}
+.recently-added{
+	padding: 15px;
+}
+.recently-added h1{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
+	background: #00B0FF;
+	color: #fff;
+	text-shadow: 2px 2px 5px #424242;
+	padding: 15px;
+}
+.recently-added img{
+	width: 100%;
+	height: 400px;
+}
+.recently-added h2{
+	opacity: 0;
+	width: 90%;
+	color: #fff;
+	height: 100%;
+	position: absolute;
+	top: 45%;
+	padding: 200px 0;
+	text-align: center; 
+	background: rgba(0,0,0,0.7);
+	transform: translateY(-50%);
+	transition: all 0.35s;
+}
+.recently-added h2:hover{
+	opacity: 1;
+	transition: all .35s;
+}
+.more{
+	background: #eeeeee;
+	padding: 10px;
+	color: #fff;
+}
+.more .col-md-4 div{
+	border-radius: 3px;
+	transition: all 0.2s;
+}
+.more .col-md-4:first-child div{
+	height: 450px;
+	background: #43CACA;
+	padding: 20px;
+}
+.more .col-md-4:nth-child(2) div{
+	background: #009DD8;
+	padding: 20px;
+	height: 450px;
+}
+.more .col-md-4:nth-child(3) div{
+	background: #F7B40E;
+	padding: 20px;
+	height: 450px;
+}
+.more h2{
+	text-align: center;
+}
+.more i{
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%);
+	text-align: center;
+	font-size: 80px;
+	margin: 15px 0;
+}
+.more p{
+	padding: 15px;
+	font-size: 16px;
+}
+.more .col-md-4 div:hover{
+	box-shadow: 0px 8px 15px #424242;
+	cursor: context-menu;
+	transition: all 0.2s;
+	position: relative;
+	margin-top: -5px;
+}
+
+.info
+{
+	width:100%;
+	height: 100%;
+	padding: 50px 15px;
+}
+.info .col-md-3 p
+{
+	border-left: 4px solid #0065B3;
+	padding: 5px;
+	font-size: 14px;
+}
+.info tr td:first-child{
+	text-align: right;
+	vertical-align: top;
+	padding: 0 10px;
+}
+footer
+{
+	background: #0065B3; 
+	width:100%;
+	padding: 20px;
+	color: #fff;
+}
+footer ul li
+{
+	display: inline;
+}
+footer p{
+	margin: 15px 0;
+}
+.ShareThisPage {
+    float: right;
+    margin-top: 19px;
+    margin-bottom: 17px;
+}
+
+.ShareThisPage h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 11px;
+}
+
+.ShareThisPage ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999999px;
+    list-style: none;
+}
+.ShareThisPage ul li {
+    float: left;
+    margin-left: 8px;
+}
+.ShareThisPage .soc_icon_fb a {
+    background: url(../images/social_icons2.png) 0 0px
+}
+
+.ShareThisPage .soc_icon_tw a {
+    background: url(../images/social_icons2.png) -36px 0px
+}
+
+.ShareThisPage .soc_icon_gP a {
+    background: url(../images/social_icons2.png) -72px 0px
+}
+.ShareThisPage .soc_icon_in a {
+    background: url(../images/social_icons2.png) -108px 0px
+}
+
+.ShareThisPage .soc_icon_yt a {
+    background: url(../images/social_icons2.png) -144px 0px
+}
+
+.ShareThisPage .soc_icon_lkl a {
+    background: url(../images/social_icons2.png) -180px 0px
+}
+.ShareThisPage ul li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+.about_lms img{
+	width: 100%;
+	padding: 15px 50px;
+}
+.about_title{
+	margin: 20px 0 25px 0;
+	text-align: center;
+	padding: 10px;
+	width: 35%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	border-bottom: 2px solid #0065B3;
+}
