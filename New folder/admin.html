@@ -3,12 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>eLibrary</title>
+	<title>Admin</title>
 	<link rel="shortcut icon" href="data/images/title-logo2.png">
 	<link rel="stylesheet" href="data/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="data/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="data/css/style.css">
 	<link rel="stylesheet" href="data/css/media.css">
 	<!-- scripts -->
@@ -16,21 +15,99 @@
 	<script type="text/javascript" src="data/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="container-fluid">
-  	<div class="row">
-	  <div class="col-md-3">
-	  	<div class="row">
-	      <div class="dashboard-bar">
-		  	
-		  </div>
+<div class="container-fluid">
+  <div class="row">
+<!-- 	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	  	<div class="navbar-header">
+		  <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">
+		    <i class="fas fa-bars"></i> <span> Menu</span> 
+		  </a>
+		</div>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="#"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+	      <li class="dropdown">
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+	        	<i class="fas fa-user"></i> User <span class="caret"></span>
+	        </a>
+	        <ul class="dropdown-menu">
+	        <li><a href="#">Profile</a></li>
+	        <li><a href="#">Log out</a></li>
+	        </ul>
+	      </li>
+	    </ul>
+	  </div>
+	</nav> -->
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <i class="fas fa-bars"></i>
+	      </button>
+	      <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">
+		    <i class="fab fa-elementor"></i> <span> Menu</span>
+		  </a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+		    <li><a href="#"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+		    <li class="dropdown">
+		      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		       	<i class="fas fa-user"></i> User <span class="caret"></span>
+		      </a>
+		      <ul class="dropdown-menu">
+		        <li><a href="#">Profile</a></li>
+		        <li><a href="#">Log out</a></li>
+		      </ul>
+		    </li>
+		  </ul>
 	    </div>
 	  </div>
-	  <div class="col-md-9">
-	  	<div class="row">
-	  		
-	  	</div>
-	  </div>	
-	</div> 
+	</nav>
   </div>
+</div>
+<div id="wrapper">
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">Start Bootstrap</li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Shortcuts</a></li>
+      <li><a href="#">Overview</a></li>
+	  <li><a href="#">Events</a></li>
+	  <li><a href="#">About</a></li>
+	  <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+  	  	<nav class="navbar navbar-default second-nav-admin">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="">WebSiteName</a>
+		    </div>
+		  </div>
+		</nav>  
+	  </div>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
 </body>
 </html>
