@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   var hellopreloader = document.getElementById("hellopreloader_preload");
   function fadeOutnojquery(el){ 
     el.style.opacity = 1;
@@ -13,6 +14,21 @@
     setTimeout(function(){
       fadeOutnojquery(hellopreloader);
     },1000);
+=======
+'use strict';
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+>>>>>>> a5e67cf0e6d71dda68b6df2a02e354e8e9420bf9
   };
 
 var $amount = $('#amount'),
@@ -86,5 +102,12 @@ adjust(min, max);
 //   var timeinterval = setInterval(updateClock, 1000);
 // }
 
+<<<<<<< HEAD
 // var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 // initializeClock('clockdiv', deadline);
+=======
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+
+
+>>>>>>> a5e67cf0e6d71dda68b6df2a02e354e8e9420bf9
