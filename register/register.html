@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<title>Register</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="container-fluid">
+	  <div class="row">
+	  	<div class="registerBlock">
+	  		<div class="innerRegisterBlock">
+	  			<h3>Register to Lib</h3>
+	  			<form action="" autocomplete="off">
+		  			<div class="inputBlock">
+		  				<table>
+		  					<tr>
+		  						<td>User ID</td>
+		  						<td>
+		  							<input type="text" required>
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td>First Name</td>
+		  						<td>
+		  							<input type="text" required>
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td>Last Name</td>
+		  						<td>
+		  							<input type="text" required>
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td>User Type</td>
+		  						<td>
+		  							<select name="" id="">
+		  								<option disabled hidden selected>Not choosen</option>
+		  								<option value="">Student</option>
+		  								<option value="">Teacher</option>
+		  								<option value="">Librarian</option>
+		  							</select>
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td>Date of Birth</td>
+		  						<td class="dob">
+		  							<input type="date" min="1900-04-01" max="2018-05-30">
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td>Registered Date</td>
+		  						<td><input type="date" min="1900-04-01" max="2018-05-30"></td>
+		  					</tr>
+		  					<tr>
+		  						<td>Phone Number</td>
+		  						<td>
+		  							<input type="text" name="phone"	placeholder="998XX-XXX-XX-XX" id="myInput" oninput="phone()" maxlength="16" required>
+		  						</td>
+		  					</tr>
+		  					<tr>
+		  						<td>E-Mail Address</td>
+		  						<td><input type="email" required=""></td>
+		  					</tr>
+		  					<tr>
+		  						<td>Password</td>
+		  						<td><input type="password" required=""></td>
+		  					</tr>
+		  					<tr>
+		  						<td>Confirm Password</td>
+		  						<td><input type="password" required=""></td>
+		  					</tr>
+		  				</table>
+	  				</form>
+	  			</div>
+  				<input type="submit" value="Register" class="register" />
+	  		</div>
+	  	</div>
+	  </div>
+	</div>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function phone(){
+			var x = document.getElementById("myInput");
+			var v = x.value;
+			if (v.match(/^\d{1}$/) !== null) {
+				x.value = '+' + v;
+			}
+			else if (v.match(/^[+].\d{4}$/) !== null) {
+				x.value = v + '-';
+		      }
+			else if (v.match(/^[+].\d{4}\-\d{3}$/) !== null)  {
+				x.value = v + '-';
+			}
+			else if (v.match(/^[+].\d{4}\-\d{3}\-\d{2}$/) !== null)  {
+				x.value = v + '-';
+			}
+			else if(x.value.length === 7 || x.value.length === 11 || x.value.length === 14){
+				x.value = x.value.substring(0, x.value.length - 1);
+			}
+		}
+	</script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

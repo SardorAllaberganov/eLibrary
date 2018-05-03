@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="data/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
     <link rel="stylesheet" href="data/css/owl.carousel.min.css">
     <link rel="stylesheet" href="data/css/style.css">
     <link rel="stylesheet" href="data/css/media.css">
     <!-- scripts -->
     <script type="text/javascript" src="data/js/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
     <script type="text/javascript" src="data/js/bootstrap.min.js"></script>
     <script src="data/js/owl.carousel.min.js"></script>
-    <!-- <script src="data/js/catalog.js"></script> -->
 </head>
 <body>
 <div class="container-fluid">
+  <!-- <div id="hellopreloader"><div id="hellopreloader_preload"></div></div> -->
     <!-- header part -->
     <div class="row">
         <header>
@@ -85,6 +87,13 @@
                 </select>
             </label>
           </form>
+          <div class="row">
+            <div class="yearRange">
+              <h3>Years</h3><br>
+              <div id="slider" name="slider"></div>
+              <div class="yearR">Between <span class="min"></span> and <span class="max"></span></div>
+            </div>
+          </div>
         </div>
       </div>
       <!--end of filter bar-->
@@ -159,57 +168,6 @@
           <!-- end of book items section -->
         </div>
       </div>
-
-<!-- <div class="center">
-<div class="pagination">
-    <ul class="pagination">
-        <li>
-            <a href="javascript:void(0)" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-            </a>
-        </li>
-        <li>
-            <a href="javascript:void(0)" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-            </a>
-        </li>
-    </ul>
-
-</div>
-</div> -->
-<!-- parallax js -->
-<script type="text/javascript">
-    $(window).scroll(function () {
-        $(".parallax").css("background-position","50% " + ($(this).scrollTop() / -2) + "px");
-    });
-</script>
-
-<script type="text/javascript">
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoplayTimeout:2000,
-        autoplayHoverPause:true,
-        dots: false,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:5
-            },
-            1000:{
-                items:10
-            }
-        }
-    });
-    $('.play').on('click',function(){
-        owl.trigger('play.owl.autoplay',[2000])
-    })
-    $('.stop').on('click',function(){
-        owl.trigger('stop.owl.autoplay')
-    })
-</script>
+      <script type="text/javascript" src="data/js/index.js"></script>
 </body>
 </html>

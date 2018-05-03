@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<title>Login</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+  	<div class="row">
+  	  <div class="loginMain">
+		<div class="loginBlock">
+		  <h2>Library</h2>
+		  <div class="loginCardBody">
+			<form action="">
+			  <div class="login_row">
+				<svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+		          <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+		        </svg>
+			    <input type="text" name="userID" class="userID" placeholder="User ID" required>
+			  </div>
+			  <div class="login_row">
+			  	<svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+            	  <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+          		</svg>
+			  	<input type="password" class="userPass" placeholder="Password" name="password" required>
+			  </div>
+			  <label class="label">
+			    <input  class="label__checkbox" type="checkbox" /> 
+			      <span class="label__text">
+				    <span class="label__check">
+				      <i class="fas fa-check"></i>
+				    </span>
+				  </span>
+				  <span class="remember_desc"> Remember me</span>
+				</label>
+			  <button type="submit" class="loginBtn">Login</button>
+			  <div class="row">
+			    <a href="#" class="forgot_pass">Forgot your password?</a>
+			  </div>
+			</form>
+		  </div>
+		</div>  	
+  	  </div>	
+  	</div>
+  </div>
+</body>
+</html>
