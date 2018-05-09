@@ -615,6 +615,7 @@ footer p{
 }
 .bookItem-box .book-img{
 	width: 100%;
+	margin: 10px 0;
 }
 .bookItem-box .book-img img{
 	width: 100%;
@@ -627,8 +628,11 @@ footer p{
 	margin: 5px 0;
 }
 .bookItem-box .book-description{
-	padding: 15px 15px 15px 0;
 	font-size: 15px;
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 .bookItem-box .bottom-bar{
 	text-align: center;
@@ -817,6 +821,77 @@ input[type=date]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
-/*::-webkit-scrollbar {
-	display: none;
-}*/
+
+
+.bookDetailMainBlock{
+	background: #fff;
+	border-radius: 4px;
+	width: 100%;
+	height: 100%;
+	border:1px solid #E0E0E0;
+	box-shadow: 0 3px 10px #919191;
+}
+.bookDetailMainBlock #boxread
+{
+	border: 1px solid blue;
+	padding: 8px;
+	text-align: center;
+	background-color: blue;
+	color: white;
+}
+.bookDetailMainBlock .rating, label
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    float: left;
+}
+.rating_Stars{
+	list-style: none;
+	width: 5px;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.rating_Stars li{
+	display: inline;
+	width: 1px;
+}
+.rating_Stars li>img{
+	width: 15%;
+}
+.overAllRating{
+	width: 100%;
+	background: #E0E0E0;
+	text-align: center;
+	margin-top: 10px;
+}
+/*
+div.stars {
+  width: 270px;
+  display: inline-block;
+}
+input.star { display: none; }
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+input.star-1:checked ~ label.star:before { color: #F62; }
+label.star:hover { transform: scale(1.3); }
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+*/
