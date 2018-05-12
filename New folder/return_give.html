@@ -15,12 +15,6 @@
 	<script type="text/javascript" src="data/js/jquery.min.js"></script>
 	<script type="text/javascript" src="data/js/bootstrap.min.js"></script>
 	<script src="data/js/owl.carousel.min.js"></script>
-
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
 </head>
 <body>
   <div class="container-fluid">
@@ -83,7 +77,7 @@
     </div>
     <div class="col-md-12 mb-3">
       <label for="validationCustom03">User ID</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="U1xxxxxx" required>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="U1xxxxxx" required>
       <div class="invalid-feedback">
         Please provide a valid ID.
       </div>
@@ -91,7 +85,7 @@
     <div class="col-md-12 mb-3">
       <div class="ui-widgett">
       <label for="tags">Book name</label>
-      <input type="text" id="tags" class="form-control" required>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="name" required>
       </div>
     </div>
     <div class="col-md-6 mb-3">
@@ -110,56 +104,19 @@
     </div>
     <div class="col-md-12 mb-3">
       <label for="validationCustom02">Book author</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="J.K Rowling"  required>
+      <input type="text" class="form-control" id="validationCustom06" placeholder="J.K Rowling"  required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationCustom01">Given date</label>
-      <input type="text" class="form-control" id="datepicker" required>
+      <input type="date" class="form-control" id="validationCustom07" required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationCustom01">Return date</label>
-      <input type="text" class="form-control" id="datepicker"  required>
+      <input type="date" class="form-control" id="validationCustom08" required>
     </div>
   </div>
   <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
-<script>
-  $( function() {
-  	
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $("input").click(function())
-  	{
-  		$("availableTags").css({"background-color": "red"});
-  	
-    $("#tags").css('background-color', 'red');
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  } );
-  </script>
 <script>
    (function() {
   'use strict';
@@ -175,11 +132,6 @@
     }, false);
   }, false);
   })();
-</script>
-<script>
-    $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
 </script>
 	   </div>
 	  </div>
