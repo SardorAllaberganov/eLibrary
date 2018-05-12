@@ -908,7 +908,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
 	padding: 8px;
 
 }
+.give_return
+{
+    width: 100%;
+    padding: 20px 5px;
+	background-color: white;
+	box-shadow: 0 5px 10px #424242;	
+}
+.give_return  label
+{
+	padding: 10px;
+	font-size: 17px;
+}
+.give_return  button
+{
+	margin-top: 8px;
+	padding: 10px;
 
+  
 /*
 div.stars {
   width: 270px;

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>return_give</title>
+	<link rel="shortcut icon" href="data/images/title-logo2.png">
+	<link rel="stylesheet" href="data/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="data/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="data/css/style.css">
+	<link rel="stylesheet" href="data/css/media.css">
+	<!-- scripts -->
+	<script type="text/javascript" src="data/js/jquery.min.js"></script>
+	<script type="text/javascript" src="data/js/bootstrap.min.js"></script>
+	<script src="data/js/owl.carousel.min.js"></script>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+</head>
+<body>
+  <div class="container-fluid">
+  	<div class="row">
+  	  <header>
+		<nav class="navbar navbar-custom">
+		  <div class="container-fluid">
+		    <div class="navbar-header col-md-7 col-sm-7  col-xs-7">
+		      <a class="navbar-brand" href="#"><img src="data/images/logo.png" alt="logo"></a>
+		    </div>
+		    <div class="col-md-5 col-sm-5 col-xs-5">
+		      <form action="#">
+  	    	    <input type="text" name="search" placeholder="Search" /><button type="submit"><i class="fas fa-search"></i></button>	
+  	          </form>
+  	    	</div>
+		  </div>
+		</nav>
+      </header>
+  	</div>
+  	<div class="row">
+	  <nav class="navbar second-nav">
+	    <div class="container-fluid">
+		  <div class="navbar-header navbar-right">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span> 
+		    </button>
+		  </div>
+		  <div class="collapse navbar-collapse" id="myNavbar">
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+		      <li><a href="#">Catalog</a></li>
+		      <li><a href="#">Text books</a></li> 
+		      <li><a href="#">About</a></li> 
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="#"><span class=""></span> User</a></li>
+		    </ul>
+		  </div>
+		</div>
+	  </nav>
+  	</div>
+  </div>
+  <br>
+  <div class="container">
+  	<div class="row">
+  	<div class="give_return">
+  	<br>
+  	 <ul class="nav nav-tabs">
+	    <li class="active"><a data-toggle="tab" href="#give">Give book</a></li>
+	 </ul>
+	 <div class="tab-content">
+	   <div id="give" class="tab-pane fade in active">
+	   	<form class="container" id="needs-validation" novalidate>
+  <div class="row">
+    <div class="col-md-12 mb-3">
+      <label for="validationCustom01">User name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Mark" required>
+    </div>
+    <div class="col-md-12 mb-3">
+      <label for="validationCustom03">User ID</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="U1xxxxxx" required>
+      <div class="invalid-feedback">
+        Please provide a valid ID.
+      </div>
+    </div>
+    <div class="col-md-12 mb-3">
+      <div class="ui-widgett">
+      <label for="tags">Book name</label>
+      <input type="text" id="tags" class="form-control" required>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom04">Book ID</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Book ID" required>
+      <div class="invalid-feedback">
+        Please provide a valid ID.
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom05">Book ISBN</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="ISBN" required>
+      <div class="invalid-feedback">
+        Please provide a valid ISBN.
+      </div>
+    </div>
+    <div class="col-md-12 mb-3">
+      <label for="validationCustom02">Book author</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="J.K Rowling"  required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">Given date</label>
+      <input type="text" class="form-control" id="datepicker" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">Return date</label>
+      <input type="text" class="form-control" id="datepicker"  required>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+<script>
+  $( function() {
+  	
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $("input").click(function())
+  	{
+  		$("availableTags").css({"background-color": "red"});
+  	
+    $("#tags").css('background-color', 'red');
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+<script>
+   (function() {
+  'use strict';
+
+  window.addEventListener('load', function() {
+    var form = document.getElementById('needs-validation');
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  }, false);
+  })();
+</script>
+<script>
+    $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+</script>
+	   </div>
+	  </div>
+	  </div>
+	  </div>
+  </div>
+	<br>
+  <footer>
+  		<div class="row">
+  		  <div class="col-md-4"><p><i class="far fa-copyright"></i> 2018 INHA UNIVERSITY IN TASHKENT</p></div>
+  		  <div class="col-md-4"><p>Dear Visitor! If you find any mistakes on the website,select it and press Ctrl+Enter in order to notify the administrator.</p></div>
+  		  <div class="col-md-4">
+  		    <div class="ShareThisPage">
+               <img src="data/images/qr_code.png" alt="Qr code" title="qr_code" style="width: 52px;margin-top: -6px;float: right;margin-left: 15px;">
+                <ul>
+			<li><a href="http://telegram.me/inha_uz"><img src="data/images/logo_te.png" alt="Telegram" style="width: 32px;margin-top: 2px;float: right;margin-left: 15px;"></a></li>
+                    <li class="soc_icon_fb"><a href="https://www.facebook.com/inha.uz?ref=bookmarks">fb</a></li>
+                    <li class="soc_icon_tw"><a href="https://www.youtube.com/channel/UC61W3C4BGMIIzYU6orDzzTw">tw</a>
+                    </li>
+                    <li class="soc_icon_gP"><a href="https://instagram.com/inha_tashkent/">gP</a></li>
+                    <li class="soc_icon_lkl"><a href="https://www.linkedin.com/pub/inha-university-in-tashkent/a6/0/280">gP</a></li>
+                    <li class="soc_icon_in"><a href="https://plus.google.com/+InhaUz">in</a></li>
+                    <li class="soc_icon_yt"><a href="https://twitter.com/Inha_Tashkent">yt</a></li>
+                </ul>
+            </div>		
+  		</div>
+  		</div>
+  </footer>
+</body>
+</html>
